@@ -29,7 +29,7 @@
 
   <body>
     <div class="container-flex">
-      <div class="row tob-bar">
+      <div class="row my-3 search-bar">
         <nav class="col d-flex justify-content-between align-items-center">
           <i class="fas fa-search"></i>
           <input
@@ -42,11 +42,14 @@
         </nav>
       </div>
 
-      <div class="row" id="tasks">
-        <h6 class="bold col-7">8 task completed out of 10</h6>
-        <h6 class="col-5 color-dropdowns">
-          Show: <span class="color-selected">This Week</span>
-        </h6>
+      <div class="row" id="tasks-text">
+        <div class="col-12 d-flex justify-content-between">
+          <h6 class="bold d-inline-flex">8 task completed out of 10</h6>
+          <h6 class="d-inline-flex color-dropdowns">
+            Show: <span class="color-selected">This Week</span>
+          </h6>
+        </div>
+
         <div class="col">
           <div class="progress" style="height: 4px;">
             <div
@@ -59,16 +62,16 @@
             ></div>
           </div>
         </div>
-        <h5 class="col-12 bold">23 December, Sunday</h5>
-        <hr />
 
+        <h5 class="col-12 bold">23 December, Sunday</h5>
+        
         <div
-          class="dropdown-divider col mb-3"
-          style="background-color: var(--color-divider);"
+        class="dropdown-divider col mb-3"
+        style="background-color: var(--color-divider);"
         ></div>
       </div>
-
-      <!-- <div class="row">
+        
+        <!-- <div class="row">
         <div class="col">
           <div class="row">
             <div class="col"></div>
@@ -84,21 +87,105 @@
           </div>
         </div>
       </div> -->
+
       <div class="row">
         <div class="col">
-          <div class="card shadow-sm">
-            <div class="card-body ">
-              <h5 class="d-flex-inline caca">Send benefit review by...</h5>
-              <h6 class="d-flex caca text-muted">Reminder</h6>
+          <div class="card shadow-sm border-0 mb-3">
+            <div class="card-body">
+              <div class="caca d-flex justify-content-between">
+                <h5 class="d-flex flex-grow-1 caca">
+                  Send benefit review by...
+                </h5>
+                <h6 class="caca text-muted">Reminder</h6>
+              </div>
+
               <p class="card-text">Due date: <span>December 23, 2018</span></p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-              <button class="btn btn-success"> Completed </button>
+              <div class="d-flex justify-content-between align-items-end">
+                <img
+                  src="./images/A.jpg"
+                  class="rounded-circle img-fluid"
+                  alt="George Fields Profile Picture"
+                />
+                <p>George Fields</p>
+                <button class="btn btn-success color-progress">
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow border-0 mb-3">
+            <div class="card-body">
+              <div class="caca d-flex justify-content-between">
+                <h5 class="d-flex flex-grow-1 caca">
+                  Invite to office meet-up
+                </h5>
+                <h6 class="caca text-muted">Call</h6>
+              </div>
+
+              <p class="card-text">Due date: <span>December 23, 2018</span></p>
+              <div class="d-flex justify-content-between align-items-end">
+                <img
+                  src="./images/B.jpg"
+                  class="rounded-circle img-fluid"
+                  alt="ebecca Moore Profile Picture"
+                />
+                <p>Rebecca Moore</p>
+                <button class="btn btn-success color-danger">Ended</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm border-0 mb-3">
+            <div class="card-body">
+              <div class="caca d-flex justify-content-between">
+                <h5 class="d-flex flex-grow-1 caca">
+                  Office meet up
+                </h5>
+                <h6 class="caca text-muted">Event</h6>
+              </div>
+
+              <p class="card-text">Due date: <span>December 23, 2018</span></p>
+              <div class="d-flex justify-content-between align-items-end">
+                <img
+                  src="./images/C.jpg"
+                  class="rounded-circle img-fluid"
+                  alt="Lindsey Stroud Profile Picture"
+                />
+                <p>Lindsey Stroud</p>
+                <button class="btn btn-success color-progress">
+                  Completed
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- end of row -->
+
+
+      <div class="row" id="tasks-text">
+        <div class="col-12 caca justify-content-between align-items-center">
+          <h5 class="bold d-inline-flex caca">Deals</h5>
+          <h6 class="d-inline-flex caca color-dropdowns">
+            Show: <span class="color-selected">Monthly</span>
+          </h6>
+        </div>
+        
+        <div
+        class="dropdown-divider col mb-3"
+        style="background-color: var(--color-divider);"
+        ></div>
+      </div>
+      <div class="col">
+        <div class="coco"></div>
+        <div class="graph-text">Closed deals</div>
+      </div>
+    <!-- end of container -->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
