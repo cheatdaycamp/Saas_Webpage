@@ -36,27 +36,29 @@
     <div class="container-flex">
       <div id="main-row" class="row">
         <!-- DASHBORD -->
-        <div id="dashboard" class="special col-lg-3 col-md-4 d-none d-md-block">
-          <div class="row">
-            <div class="col">
+        <div id="dashboard" class="special  p-0  col-lg-3 col-md-4 d-none d-md-block">
+          <div class="row cucu h-100 flex-fill">
+            <div class="col-12 my-3">
               <h6 class="dashboard-title accent-blue">SaaS Kit</h6>
             </div>
 
-            <div class="col">
+            <div class="col-12 my-3">
               <div
-                class="dropdown-divider col mb-3"
+                class="dropdown-divider mb-3"
                 style="background-color: var(--color-divider);"
               ></div>
             </div>
-            <div class="col">
+            <div class="col-12 my-3">
               <div class="d-flex">
                 <img
                   src="./images/A.jpg"
-                  class="rounded-circle img-24"
+                  class="d-block rounded-circle img-24"
                   alt="George Fields Profile Picture"
                 />
-                <p>Sierra Ferguson</p>
-                <span>s.ferguson@gmail.com</span>
+                <div class="col-12">
+                  <p>Sierra Ferguson</p>
+                  <span>s.ferguson@gmail.com</span>
+                </div>
               </div>
             </div>
             <ul class="menu">
@@ -69,248 +71,271 @@
             </ul>
 
             <div
-              class="dropdown-divider col mb-3"
+              class="dropdown-divider col-12 mb-3"
               style="background-color: var(--color-divider);"
             ></div>
 
-            <div class="">Settings</div>
-            <div class="">Toggle Sidebar</div>
+            <div class="col-12 justify-content-around cici flex-fill">
+              Settings
+              <div class="">Toggle Sidebar</div>
+            </div>
           </div>
         </div>
         <!-- DASHBORD -->
 
         <!-- MAIN -->
-        <div class="col special">
+        <div class="col p-0 special">
           <!-- GLOBAL SEARCH-->
           <div class="row my-3 search-bar">
             <nav class="col d-flex justify-content-between align-items-center">
-              <i class="fas fa-search"></i>
+              <a href="" class=""> <i class="fas fa-search"></i></a>
               <input
                 type="text"
                 class="form-control flex-grow-1 mx-3"
                 placeholder="Global Search"
                 aria-label="GlobalSearch"
               />
-              <i class="far fa-bell"></i>
+              <a href="" class="bell-wrapper">
+                <div class="red-circle"></div>
+                <i class="far fa-bell"></i>
+              </a>
             </nav>
           </div>
           <!-- GLOBAL SEARCH-->
 
-          <!-- TASKS INFO-->
-          <div class="row" id="tasks-text">
-            <div class="col d-flex justify-content-between">
-              <h6 class="bold d-inline-flex">8 task completed out of 10</h6>
-              <h6 class="d-inline-flex color-dropdowns">
-                Show: <span class="color-selected">This Week</span>
-              </h6>
-            </div>
-          </div>
-          <!-- TASKS INFO-->
+          <div id="content-wrapper" class="row">
+            <div class="col-12">
+              <!-- TASKS INFO-->
+              <div class="row" id="tasks-text">
+                <div class="col d-flex justify-content-between">
+                  <h6 class="bold d-inline-flex">8 task completed out of 10</h6>
+                  <h6 class="d-inline-flex color-dropdowns">
+                    Show: <span class="color-selected">This Week</span>
+                  </h6>
+                </div>
+              </div>
+              <!-- TASKS INFO-->
 
-          <!-- PROGRESS BAR-->
-          <div class="row">
-            <div class="col">
-              <div class="progress" style="height: 4px;">
+              <!-- PROGRESS BAR-->
+              <div class="row">
+                <div class="col">
+                  <div class="progress" style="height: 4px;">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="
+                        width: 60%;
+                        background-color: var(--color-progress);
+                      "
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <!-- PROGRESS BAR-->
+
+              <!-- DATE-->
+              <div class="row">
+                <h5 class="col-12 bold">23 December, Sunday</h5>
+              </div>
+              <!-- DATE-->
+
+              <!-- SEPARATOR-->
+              <div class="row">
                 <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 60%; background-color: var(--color-progress);"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
+                  class="dropdown-divider col mb-3"
+                  style="background-color: var(--color-divider);"
                 ></div>
               </div>
-            </div>
-          </div>
-          <!-- PROGRESS BAR-->
+              <!-- SEPARATOR-->
 
-          <!-- DATE-->
-          <div class="row">
-            <h5 class="col-12 bold">23 December, Sunday</h5>
-          </div>
-          <!-- DATE-->
+              <!-- WEEK DAYS -->
+              <div class="row justify-content-around align-items-center d-none d-md-flex">
+                <div class="days data">
+                  Sun <span class="date date-selected">23</span>
+                </div>
+                <div class="days data">Sun <span class="date">24</span></div>
+                <div class="days data">Sun <span class="date">25</span></div>
+                <div class="days data">Sun <span class="date">26</span></div>
+                <div class="days data">Sun <span class="date">27</span></div>
+                <div class="days data">Sun <span class="date">28</span></div>
+                <div class="days data">Sun <span class="date">29</span></div>
+              </div>
+              <!-- WEEK DAYS -->
 
-          <!-- SEPARATOR-->
-          <div class="row">
-            <div
-              class="dropdown-divider col mb-3"
-              style="background-color: var(--color-divider);"
-            ></div>
-          </div>
-          <!-- SEPARATOR-->
+              <div class="row">
+                <!-- CARD 01 -->
+                <div class="col">
+                  <div class="card shadow-sm border-0 mb-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="d-flex flex-grow-1">
+                          Send benefit review by...
+                        </h5>
+                        <h6 class="text-muted">Reminder</h6>
+                      </div>
 
-          <!-- WEEK DAYS -->
-          <div class="row justify-content-around align-items-center">
-            <div class="days data">
-              Sun <span class="date date-selected">23</span>
-            </div>
-            <div class="days data">Sun <span class="date">25</span></div>
-            <div class="days data">Sun <span class="date">26</span></div>
-            <div class="days data">Sun <span class="date">27</span></div>
-            <div class="days data">Sun <span class="date">29</span></div>
-            <div class="days data">Sun <span class="date">28</span></div>
-          </div>
-          <!-- WEEK DAYS -->
-
-          <div class="row">
-            <!-- CARD 01 -->
-            <div class="col">
-              <div class="card shadow-sm border-0 mb-3">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="d-flex flex-grow-1">
-                      Send benefit review by...
-                    </h5>
-                    <h6 class="text-muted">Reminder</h6>
-                  </div>
-
-                  <p class="card-text">
-                    Due date: <span>December 23, 2018</span>
-                  </p>
-                  <div class="d-flex justify-content-between align-items-end">
-                    <img
-                      src="./images/A.jpg"
-                      class="rounded-circle img-fluid img-24"
-                      alt="George Fields Profile Picture"
-                    />
-                    <p>George Fields</p>
-                    <button class="btn btn-success color-progress">
-                      Completed
-                    </button>
+                      <p class="card-text">
+                        Due date: <span>December 23, 2018</span>
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <img
+                          src="./images/A.jpg"
+                          class="rounded-circle img-fluid img-24"
+                          alt="George Fields Profile Picture"
+                        />
+                        <p>George Fields</p>
+                        <button class="btn btn-success color-progress">
+                          Completed
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="col">
-              <div class="card shadow border-0 mb-3">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="d-flex flex-grow-1">
-                      Invite to office meet-up
-                    </h5>
-                    <h6 class="text-muted">Call</h6>
-                  </div>
+                <div class="col">
+                  <div class="card shadow border-0 mb-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="d-flex flex-grow-1">
+                          Invite to office meet-up
+                        </h5>
+                        <h6 class="text-muted">Call</h6>
+                      </div>
 
-                  <p class="card-text">
-                    Due date: <span>December 23, 2018</span>
-                  </p>
-                  <div class="d-flex justify-content-between align-items-end">
-                    <img
-                      src="./images/B.jpg"
-                      class="rounded-circle img-fluid img-24"
-                      alt="ebecca Moore Profile Picture"
-                    />
-                    <p>Rebecca Moore</p>
-                    <button class="btn btn-success color-danger">
-                      Ended
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm border-0 mb-3">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="d-flex flex-grow-1">
-                      Office meet up
-                    </h5>
-                    <h6 class="text-muted">Event</h6>
-                  </div>
-
-                  <p class="card-text">
-                    Due date: <span>December 23, 2018</span>
-                  </p>
-                  <div class="d-flex justify-content-between align-items-end">
-                    <img
-                      src="./images/C.jpg"
-                      class="rounded-circle img-fluid img-24"
-                      alt="Lindsey Stroud Profile Picture"
-                    />
-                    <p>Lindsey Stroud</p>
-                    <button class="btn btn-success color-progress">
-                      Completed
-                    </button>
+                      <p class="card-text">
+                        Due date: <span>December 23, 2018</span>
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <img
+                          src="./images/B.jpg"
+                          class="rounded-circle img-fluid img-24"
+                          alt="ebecca Moore Profile Picture"
+                        />
+                        <p>Rebecca Moore</p>
+                        <button class="btn btn-success color-danger">
+                          Ended
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
+                <div class="card shadow-sm border-0 mb-3">
+                  <div class="col">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="d-flex flex-grow-1">
+                          Office meet up
+                        </h5>
+                        <h6 class="text-muted">Event</h6>
+                      </div>
+
+                      <p class="card-text">
+                        Due date: <span>December 23, 2018</span>
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <img
+                          src="./images/C.jpg"
+                          class="rounded-circle img-fluid img-24"
+                          alt="Lindsey Stroud Profile Picture"
+                        />
+                        <p>Lindsey Stroud</p>
+                        <button class="btn btn-success color-progress">
+                          Completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row cucu flex-fill">
+                  <span class='col-12 text-center'>Show More</span>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- REMINDERS -->
+              <!-- REMINDERS -->
 
-          <!-- Blue Graph -->
-          <div class="row mb-4" id="deals">
+              <!-- Blue Graph -->
+              <div class="row mb-4" id="deals">
+                <div class="col-12 col-md-5 mb-2">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="bold d-flex">Deals</h5>
+                    <div class="days data">
+                      Sun <span class="date">24</span>
+                    </div>
+                    <h6 class="d-flex color-dropdowns">
+                      Show: <span class="color-selected">Monthly</span>
+                    </h6>
+                  </div>
+                </div>
+
+                <div
+                  class="dropdown-divider col mb-3"
+                  style="background-color: var(--color-divider);"
+                ></div>
+
+                <div class="col-12 mb-3">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <div class="coco d-inline-block"></div>
+                    <p class="graph-text ml-1">Closed deals</p>
+                  </div>
+                </div>
+                <img src="./images/Graph.png" class="col" alt="Graph" />
+              </div>
+
+              <!-- CIRCLE GRAPH -->
+
+                        
+          <div class="row mb-3" id="tasks">
             <div class="col-12 mb-2">
               <div class="d-flex justify-content-between align-items-center">
-                <h5 class="bold d-flex">Deals</h5>
-                <div class="days data">Sun <span class="date">24</span></div>
+                <h5 class="bold d-flex">Tasks</h5>
                 <h6 class="d-flex color-dropdowns">
-                  Show: <span class="color-selected">Monthly</span>
+                Show: <span class="color-selected">This Month</span>
                 </h6>
-              </div>
+               </div>
+            </div>
+              
+            <div            class="dropdown-divider col mb-3"            style="background-color: var(--color-divider);"           >
             </div>
 
-            <div
-              class="dropdown-divider col mb-3"
-              style="background-color: var(--color-divider);"
-            ></div>
-
-            <div class="col-12 mb-3">
-              <div class="d-flex justify-content-start align-items-center">
-                <div class="coco d-inline-block"></div>
-                <p class="graph-text ml-1">Closed deals</p>
-              </div>
+              <div class="col ">
+                <div class="row">
+                  <img src="./images/60.png" class="col-8" alt="Graph-60" />
+                  <div class="col-4">
+                    <div class="d-flex h-100 justify-content-start align-items-center">
+                      <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center mb-2">
+                          <div class="coco d-inline-block"></div>
+                          <p class="graph-text ml-1">Active</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                          <div class="coco d-inline-block"></div>
+                          <p class="graph-text ml-1">Ended</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                          <div class="coco d-inline-block"></div>
+                          <p class="graph-text ml-1">Completed</p>
+                        </div>
+                      </div>  
+                    </div>
+                  </div> 
+                </div>  
+              </div>    
             </div>
-            <img src="./images/Graph.png" class="col" alt="Graph" />
-          </div>
-
-          <!-- CIRCLE GRAPH -->
-
-          <!-- 
- <div class="row mb-3" id="tasks">
- <div class="col-12 mb-2">
- <div class="d-flex justify-content-between align-items-center">
- <h5 class="bold d-flex">Tasks</h5>
- <h6 class="d-flex color-dropdowns">
- Show: <span class="color-selected">This Month</span>
- </h6>
- </div>
- </div>
- 
- <div
- class="dropdown-divider col mb-3"
- style="background-color: var(--color-divider);"
- >
- <div class="col ">
- <div class="row">
- <img src="./images/60.png" class="col-8" alt="Graph-60" />
- <div class="col-4">
- <div class="d-flex h-100 justify-content-start align-items-center">
- <div class="d-flex flex-column">
- <div class="d-flex align-items-center mb-2">
- <div class="coco d-inline-block"></div>
- <p class="graph-text ml-1">Active</p>
- </div>
- <div class="d-flex align-items-center mb-2">
- <div class="coco d-inline-block"></div>
- <p class="graph-text ml-1">Ended</p>
- </div>
- <div class="d-flex align-items-center mb-2">
- <div class="coco d-inline-block"></div>
- <p class="graph-text ml-1">Completed</p>
- </div>
- </div>
- </div>
- </div>
- </div>
- </div>
- </div> -->
-
-          <!-- CIRCLE GRAPH -->
-        </div>
+            <!-- CIRCLE GRAPH -->
+            
         <!-- END OF MAIN COLUMN -->
       </div>
       <!-- END OF MAIN ROW -->
