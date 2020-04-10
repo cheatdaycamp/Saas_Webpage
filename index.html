@@ -34,8 +34,9 @@
 
   <body>
     <div class="container-flex">
-      <div class="row cici">
-        <div id="dashboard" class="col-lg-4 d-none d-md-block">
+      <div id="main-row" class="row cici">
+        <!-- DASHBORD -->
+        <div id="dashboard" class="special col-md-4">
           <div class="row">
             <div class="col">
               <h6 class="dashboard-title accent-blue">SaaS Kit</h6>
@@ -76,79 +77,82 @@
             <div class="">Toggle Sidebar</div>
           </div>
         </div>
-      </div>
-      <div class="col col-lg-8 cucu">
-        <div class="row my-3 search-bar">
-          <nav class="col d-flex justify-content-between align-items-center">
-            <i class="fas fa-search"></i>
-            <input
-              type="text"
-              class="form-control flex-grow-1 mx-3"
-              placeholder="Global Search"
-              aria-label="GlobalSearch"
-            />
-            <i class="far fa-bell"></i>
-          </nav>
-        </div>
+        <!-- DASHBORD -->
 
-        <!-- MAIN-->
+        <!-- MAIN -->
+        <div class="col-md-8 special">
+          <!-- GLOBAL SEARCH-->
+          <div class="row my-3 search-bar">
+            <nav class="col d-flex justify-content-between align-items-center">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                class="form-control flex-grow-1 mx-3"
+                placeholder="Global Search"
+                aria-label="GlobalSearch"
+              />
+              <i class="far fa-bell"></i>
+            </nav>
+          </div>
+          <!-- GLOBAL SEARCH-->
 
-        <div class="row" id="tasks-text">
           <!-- TASKS INFO-->
-          <div class="col-12 d-flex justify-content-between">
-            <h6 class="bold d-inline-flex">8 task completed out of 10</h6>
-            <h6 class="d-inline-flex color-dropdowns">
-              Show: <span class="color-selected">This Week</span>
-            </h6>
+          <div class="row" id="tasks-text">
+            <div class="col d-flex justify-content-between">
+              <h6 class="bold d-inline-flex">8 task completed out of 10</h6>
+              <h6 class="d-inline-flex color-dropdowns">
+                Show: <span class="color-selected">This Week</span>
+              </h6>
+            </div>
           </div>
           <!-- TASKS INFO-->
 
           <!-- PROGRESS BAR-->
-          <div class="col">
-            <div class="progress" style="height: 4px;">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 60%; background-color: var(--color-progress);"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <!-- PROGRESS BAR-->
-
-          <!-- DATE-->
-          <h5 class="col-12 bold">23 December, Sunday</h5>
-          <!-- DATE-->
-
-          <!-- SEPARATOR-->
-          <div
-            class="dropdown-divider col mb-3"
-            style="background-color: var(--color-divider);"
-          ></div>
-          <!-- SEPARATOR-->
-        </div>
-
-        <div class="container d-none d-md-block">
-          <!-- WEEK DAYS -->
-          
-            <div class="row cucu justify-content-around align-items-center">
-              <div class="days data caca">
-                Sun <span class="date date-selected">23</span>
-              </div>
-              <div class="days data">Sun <span class="date">24</span></div>
-              <div class="days data">Sun <span class="date">25</span></div>
-              <div class="days data">Sun <span class="date">26</span></div>
-              <div class="days data">Sun <span class="date">27</span></div>
-              <div class="days data">Sun <span class="date">29</span></div>
-              <div class="days data">Sun <span class="date">28</span></div>
-            </div>
-          </div>
-          <!-- WEEK DAYS -->
-
-          <!-- REMINDERS -->
           <div class="row">
+            <div class="col">
+              <div class="progress" style="height: 4px;">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 60%; background-color: var(--color-progress);"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- PROGRESS BAR-->
+
+          <!-- DATE-->
+          <div class="row">
+            <h5 class="col-12 bold">23 December, Sunday</h5>
+          </div>
+          <!-- DATE-->
+
+          <!-- SEPARATOR-->
+          <div class="row">
+            <div
+              class="dropdown-divider col mb-3"
+              style="background-color: var(--color-divider);"
+            ></div>
+          </div>
+          <!-- SEPARATOR-->
+
+          <!-- WEEK DAYS -->
+          <div class="row justify-content-around align-items-center">
+            <div class="days data">
+              Sun <span class="date date-selected">23</span>
+            </div>
+            <div class="days data">Sun <span class="date">25</span></div>
+            <div class="days data">Sun <span class="date">26</span></div>
+            <div class="days data">Sun <span class="date">27</span></div>
+            <div class="days data">Sun <span class="date">29</span></div>
+            <div class="days data">Sun <span class="date">28</span></div>
+          </div>
+          <!-- WEEK DAYS -->
+
+          <div class="row cucu">
             <!-- CARD 01 -->
             <div class="col">
               <div class="card shadow-sm border-0 mb-3">
@@ -177,9 +181,7 @@
                 </div>
               </div>
             </div>
-            <!-- CARD 01 -->
 
-            <!-- CARD 02 -->
             <div class="col">
               <div class="card shadow border-0 mb-3">
                 <div class="card-body">
@@ -200,14 +202,14 @@
                       alt="ebecca Moore Profile Picture"
                     />
                     <p>Rebecca Moore</p>
-                    <button class="btn btn-success color-danger">Ended</button>
+                    <button class="btn btn-success color-danger">
+                      Ended
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- CARD 02 -->
 
-            <!-- CARD 03 -->
             <div class="col">
               <div class="card shadow-sm border-0 mb-3">
                 <div class="card-body">
@@ -235,37 +237,39 @@
                 </div>
               </div>
             </div>
-            <!-- CARD 03 -->
           </div>
+
           <!-- REMINDERS -->
 
           <!-- Blue Graph -->
           <div class="row mb-4" id="deals">
-            <div class="col-12 mb-2">
-              <div class="d-flex justify-content-between align-items-center">
-                <h5 class="bold d-flex">Deals</h5>
-                <h6 class="d-flex color-dropdowns">
-                  Show: <span class="color-selected">Monthly</span>
-                </h6>
-              </div>
+          <div class="col-12 mb-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="bold d-flex">Deals</h5>
+            <div class="days data">Sun <span class="date">24</span></div>
+              <h6 class="d-flex color-dropdowns">
+                Show: <span class="color-selected">Monthly</span>
+              </h6>
             </div>
-
-            <div
-              class="dropdown-divider col mb-3"
-              style="background-color: var(--color-divider);"
-            ></div>
-
-            <div class="col-12 mb-3">
-              <div class="d-flex justify-content-start align-items-center">
-                <div class="coco d-inline-block"></div>
-                <p class="graph-text ml-1">Closed deals</p>
-              </div>
-            </div>
-            <img src="./images/Graph.png" class="col" alt="Graph" />
           </div>
-          <!-- Blue Graph -->
 
-          <!-- 60%div -->
+          <div
+            class="dropdown-divider col mb-3"
+            style="background-color: var(--color-divider);"
+          ></div>
+
+          <div class="col-12 mb-3">
+            <div class="d-flex justify-content-start align-items-center">
+              <div class="coco d-inline-block"></div>
+              <p class="graph-text ml-1">Closed deals</p>
+            </div>
+          </div>
+          <img src="./images/Graph.png" class="col" alt="Graph" />
+        </div>
+
+          <!-- CIRCLE GRAPH -->
+
+          <!-- 
           <div class="row mb-3" id="tasks">
             <div class="col-12 mb-2">
               <div class="d-flex justify-content-between align-items-center">
@@ -275,39 +279,41 @@
                 </h6>
               </div>
             </div>
-
+            
             <div
-              class="dropdown-divider col mb-3"
-              style="background-color: var(--color-divider);"
-            ></div>
-          </div>
-          <div class="row caca">
-            <img src="./images/60.png" class="col-8" alt="Graph-60" />
-            <div class="col-4">
-              <div
-                class="d-flex h-100 justify-content-start align-items-center"
-              >
-                <div class="d-flex flex-column">
-                  <div class="d-flex align-items-center mb-2">
-                    <div class="coco d-inline-block"></div>
-                    <p class="graph-text ml-1">Active</p>
-                  </div>
-                  <div class="d-flex align-items-center mb-2">
-                    <div class="coco d-inline-block"></div>
-                    <p class="graph-text ml-1">Ended</p>
-                  </div>
-                  <div class="d-flex align-items-center mb-2">
-                    <div class="coco d-inline-block"></div>
-                    <p class="graph-text ml-1">Completed</p>
+            class="dropdown-divider col mb-3"
+            style="background-color: var(--color-divider);"
+          >
+          <div class="col caca">
+            <div class="row">
+              <img src="./images/60.png" class="col-8" alt="Graph-60" />
+              <div class="col-4">
+                <div class="d-flex h-100 justify-content-start align-items-center">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="coco d-inline-block"></div>
+                      <p class="graph-text ml-1">Active</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="coco d-inline-block"></div>
+                      <p class="graph-text ml-1">Ended</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="coco d-inline-block"></div>
+                      <p class="graph-text ml-1">Completed</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- 60%div -->
-        </div>
+        </div> -->
 
+          <!-- CIRCLE GRAPH -->
+        </div>
+        <!-- END OF MAIN COLUMN -->
       </div>
+      <!-- END OF MAIN ROW -->
     </div>
     <!-- end of container -->
 

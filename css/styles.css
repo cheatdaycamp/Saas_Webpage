@@ -125,3 +125,12 @@ p {
 .days{
   padding:0 10px;
 }
+/* .row{
+  border: 4px solid coral;
+} */
+
+.special{
+  border: 4px dashed coral;
+}
+
+/* d-none d-md-block */
