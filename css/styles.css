@@ -16,7 +16,8 @@ body {
   /* border: 4px solid blue; */
 }
 body{
-  border: 2px solid green
+  border: 2px solid green;
+  overflow: hidden;
 }
 
 * {
@@ -182,6 +183,7 @@ p {
 #content-wrapper{
   background-color: var(--color-background)!important;
   border:2px solid blue;
+  overflow-y: scroll;
   
 }
 
