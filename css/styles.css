@@ -4,6 +4,7 @@
   --color-danger: #f7685b;
   --color-divider: #ebeff2;
   --color-dropdowns: #6a707e;
+  --color-background: #f5f6f8;
   --color-soft-text: #4c5862;
   --color-accent-blue: #109cf1;
 }
@@ -88,6 +89,8 @@ p {
 .cici {
   border: 6px solid lightblue;
 }
+
+
 .img-24 {
   width: 24px;
   height: auto;
@@ -112,7 +115,7 @@ p {
   color: var(--color-accent-blue);
 }
 .flex-fill {
-  flex: 1!important;
+  flex: 1 1 auto!important;
 }
 
 .data {
@@ -129,13 +132,13 @@ p {
   padding:0 10px;
 }
 
-#content-wrapper{
+/* #content-wrapper{
   border: 3px solid lightgreen
-}
+} */
 
-#content-wrapper > div > div{
+/* #content-wrapper > div > div{
   border: 3px solid lightblue
-}
+} */
 
 .special{
   border: 2px dashed coral
@@ -159,15 +162,33 @@ p {
 .fa-bell{
   float: right;
 }
+
 .min-100 {
   min-height: 100%;
 }
 
-.porongo{
-  display: flex!important;
-  flex-direction: row!important;
-  max-height:100%;
-  flex:1!important;
+#fucking-main > div{
+  background-color: white;
+}
 
-  /* min-height: 300px; */
+#fucking-main{
+  background-color: var(--color-background)
+}
+
+#deals{
+  border:2px solid black;
+}
+
+#content-wrapper{
+  background-color: var(--color-background)!important;
+  border:2px solid blue;
+  
+}
+
+#content-wrapper >div {
+background-color: white;
+}
+
+#tasks  {
+  border:2px solid lightsalmon
 }
