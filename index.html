@@ -33,11 +33,11 @@
   </head>
 
   <body>
-    <div class="container-fluid p-0 cici h-100">
-      <div id="main-row" class="row h-100">
+    <div class="container-fluid d-flex flex-grow-1 flex-column p-0 h-100">
+      <div id="main-row" class="row h-100 d-flex flex-grow-1 ">
         <div
           id="dashboard"
-          class="p-0 d-none d-md-flex d-lg-flex flex-column col-lg-3 col-md-4 special"
+          class="p-0 d-none d-md-flex d-lg-flex flex-column flex-grow-1 col-lg-3 col-md-4 "
         >
           <div class="row my-3">
             <h6 class="dashboard-title accent-blue">SaaS Kit</h6>
@@ -87,10 +87,14 @@
         </div>
 
         <!-- MAIN -->
-        <div id="fucking-main" class="col d-flex flex-grow-1 flex-column p-0">
+        <div id="fucking-main"
+        
+        class="flex-column flex-grow-1 col p-0 d-flex "
+
+        >
           <!-- GLOBAL SEARCH-->
 
-          <div class="row mb-3 search-bar">
+          <div class="row search-bar">
             <nav class="col d-flex justify-content-between align-items-center">
               <a href="" class=""> <i class="fas fa-search"></i></a>
               <input
@@ -112,7 +116,7 @@
 
           <div
             id="content-wrapper"
-            class="row m-4 flex-fill flex-grow-1 flex-wrap"
+            class="row flex-grow-1 d-flex m-4 bkg-gray"
           >
             <div class="col-lg-5 col-12 cici">
               <!-- TASKS INFO-->
@@ -291,77 +295,92 @@
               <!-- SHOW MORE -->
             </div>
 
-            <div class="col p-0" style="border: 13px dashed coral;">
-
+            <div class="col p-0 d-flex flex-column bkg-gray ml-3">
               <!-- Blue Graph -->
 
-                <div id="deals" class='row'>
-                  <div class="col-12 d-flex my-3 justify-content-between">
-                    <h5 class="bold d-flex">Deals</h5>
-                    <h6 class="d-flex color-dropdowns">
+              <div id="deals" class="row flex-grow-1 mb-3">
+                <div
+                  class="col-12 p-0  justify-content-between d-flex flex-column"
+                >
+                  <div
+                    class="row d-flex justify-content-between my-3 align-items-center"
+                  >
+                    <h5 class="bold">Deals</h5>
+                    <h6 class="color-dropdowns">
                       Show: <span class="color-selected">Monthly</span>
                     </h6>
                   </div>
+
                   <div
-                    class="dropdown-divider col-12 mb-3"
+                    class="dropdown-divider row mb-3"
                     style="background-color: var(--color-divider);"
                   ></div>
 
-                  <!-- <div class="row mb-3">
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
-                      <div class="coco d-inline-block"></div>
-                      <p class="graph-text ml-1">Closed deals</p>
+                  <div class="row cici flex-grow-1 py-3">
+                    <div class="col-12 cucu h-100 align-items-center">
+                      <div
+                        class="d-flex justify-content-start align-items-center mb-3"
+                      >
+                        <div class="marker-ring d-inline-block"></div>
+                        <p class="graph-text ml-1">Closed deals</p>
+                      </div>
+                      <!-- <img src="./images/Graph.png" class="col" alt="Graph" /> -->
                     </div>
-                    <img src="./images/Graph.png" class="col" alt="Graph" />
-                  </div> -->
+                  </div>
                 </div>
+              </div>
 
-                <!-- Blue Graph -->
+              <!-- Blue Graph -->
 
-                <!-- CIRCLE GRAPH -->
+              <!-- CIRCLE GRAPH -->
 
-                <div id="tasks" class="row">
-                  <div class="col-12 d-flex my-3 justify-content-between ">
-                    <h5 class="bold d-flex">Tasks</h5>
-                    <h6 class="d-flex color-dropdowns">
+              <div id="tasks" class="row flex-grow-1">
+                <div
+                  class="col-12 p-0  justify-content-between d-flex flex-column"
+                >
+                  <div class="row d-flex justify-content-between my-3">
+                    <h5 class="bold">Tasks</h5>
+                    <h6 class="color-dropdowns">
                       Show: <span class="color-selected">This Month</span>
                     </h6>
                   </div>
 
                   <div
-                    class="dropdown-divider col-12 mb-3"
+                    class="dropdown-divider row mb-3"
                     style="background-color: var(--color-divider);"
                   ></div>
 
-                  <div class="col-12">
-                    <!-- <img src="./images/60.png" class="col-8" alt="Graph-60" /> -->
-                    <!-- <div class="col-4">
+                  <div class="row flex-grow-1 cici d-flex">
+                    <div class="col-8  d-flex justify-content-center align-items-center p-2">
+                      <div class="row d-flex cucu flex-grow-1 h-100 img-circular-graph">
+                      </div>
+                      
+                    </div>
+                    <div class="col-4">
                       <div
                         class="d-flex h-100 justify-content-start align-items-center"
                       >
                         <div class="d-flex flex-column">
                           <div class="d-flex align-items-center mb-2">
-                            <div class="coco d-inline-block"></div>
+                            <div class="marker-ring marker-green d-inline-block"></div>
                             <p class="graph-text ml-1">Active</p>
                           </div>
                           <div class="d-flex align-items-center mb-2">
-                            <div class="coco d-inline-block"></div>
+                            <div class="marker-ring marker-yellow d-inline-block"></div>
                             <p class="graph-text ml-1">Ended</p>
                           </div>
                           <div class="d-flex align-items-center mb-2">
-                            <div class="coco d-inline-block"></div>
+                            <div class="marker-ring marker-red d-inline-block"></div>
                             <p class="graph-text ml-1">Completed</p>
                           </div>
                         </div>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <!-- CIRCLE GRAPH -->
-              
+              <!-- CIRCLE GRAPH -->
             </div>
           </div>
           <!-- END OF CONTENT WRAPPER -->
