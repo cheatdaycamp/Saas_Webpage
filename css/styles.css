@@ -19,33 +19,11 @@
   font-weight: 400;
 }
 
-/* html {
-  display: block;
-  width: 100%;
-}
-
-body {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-} */
-
 .fas,
 .far {
   color: var(--color-icons);
 }
-/* 
-body > div{
-  border: 4px solid blue
-}
-#main-row{ 
-  border: 4px solid violet
-}
-#dashboard, #fucking-main{ 
-  border: 4px solid purple
-}
- */
+
 
 .container-fluid {
   min-height: 100vh !important;
@@ -170,7 +148,7 @@ nav input {
   font-size: 1.2rem;
 }
 
-#fucking-main > div {
+#main > div {
   background-color: white;
 }
 
@@ -182,7 +160,7 @@ nav input {
   background-color: white;
 }
 
-#fucking-main {
+#main {
   background-color: var(--color-background);
 }
 
@@ -318,22 +296,3 @@ nav input {
   width:100%;
   height:100%;
 }
-
-/* .sidebar{
-  position:fixed;
-  height:100VH!important;
-} */
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {...}
-
-/* Extra Small Devices, Phones equivalent to class xs */ 
-@media only screen and (min-width : 480px) {...}
-
-/* Small Devices, Tablets equivalent to class sm */
-@media only screen and (min-width : 768px) {...}
-
-/* Medium Devices, Desktops equivalent to class md */
-@media only screen and (min-width : 992px) {...}
-
-/* Large Devices, Wide Screens equivalent to class lg */
-@media only screen and (min-width : 1200px) {...}
