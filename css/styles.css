@@ -19,7 +19,7 @@
   font-weight: 400;
 }
 
-html {
+/* html {
   display: block;
   width: 100%;
 }
@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-}
+} */
 
 .fas,
 .far {
@@ -98,8 +98,6 @@ nav input {
   height: auto;
 }
 
-
-
 .marker-ring {
   width: 8px;
   height: 8px;
@@ -142,16 +140,14 @@ nav input {
   align-items: center;
 }
 
-
 .date {
   width: 30px;
   border-radius: 100px;
-  height: 30px; 
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .red-circle {
   display: block;
@@ -223,28 +219,117 @@ nav input {
   border: 2px solid red;
 }
 
-.form-control:hover,
+.form-control:not(input):hover,
 .form-control > option :hover {
   cursor: pointer;
 }
 
-.opacity-50{
-    opacity: .5;
+.opacity-50 {
+  opacity: 0.5;
 }
 
-.btn-fixed-120{
-    min-width: 120px!important;
+.btn-fixed-120 {
+  min-width: 120px !important;
 }
 
-.show-more:hover{
-text-decoration: none;
+.show-more:hover {
+  text-decoration: none;
 }
 
 .icons-wrapper > .fas {
-    padding-right:1rem;
+  padding-right: 1rem;
 }
 
-.icons-wrapper > .fas:hover{
-    color: var(--color-accent-blue);
-    cursor: pointer;
+.icons-wrapper > .fas:hover {
+  color: var(--color-accent-blue);
+  cursor: pointer;
 }
+
+.img-30 {
+  max-width: 50px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+}
+#dashboard {
+  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+  z-index: 2000;
+}
+
+.menu {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+}
+
+.menu li span:hover {
+  cursor: pointer;
+}
+
+.border-2 {
+  border: 2px solid green!important
+}
+.logo {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  background: #c4c4c4;
+  display: flex;
+  align-items: center;
+}
+.white-bar {
+  position: relative;
+  width: 2px;
+  height: 10px;
+  left: 4px;
+  background: #ffffff;
+  border-radius: 1px;
+}
+.min-300px{
+  min-height: 300px;
+}
+.graph-class{
+  max-height: 100%;
+}
+
+@media only screen and (max-width : 1200px) {
+  #cards-holder{
+    margin-top: 3rem!important;
+    margin-left:0!important
+  }
+}
+@media only screen and (max-width : 992px) {
+  #content-wrapper{
+      margin:0!important;
+  }
+  #cards-holder{
+    margin-top: 0!important;
+    margin-left:0!important
+  }
+  #deals{
+    margin:0!important;
+  }
+}
+
+/* .sidebar{
+  position:fixed;
+  height:100VH!important;
+} */
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {...}
+
+/* Extra Small Devices, Phones equivalent to class xs */ 
+@media only screen and (min-width : 480px) {...}
+
+/* Small Devices, Tablets equivalent to class sm */
+@media only screen and (min-width : 768px) {...}
+
+/* Medium Devices, Desktops equivalent to class md */
+@media only screen and (min-width : 992px) {...}
+
+/* Large Devices, Wide Screens equivalent to class lg */
+@media only screen and (min-width : 1200px) {...}
