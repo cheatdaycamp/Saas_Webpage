@@ -94,9 +94,11 @@ nav input {
 }
 
 .img-24 {
-  width: 24px;
+  width: 35px;
   height: auto;
 }
+
+
 
 .marker-ring {
   width: 8px;
@@ -224,4 +226,25 @@ nav input {
 .form-control:hover,
 .form-control > option :hover {
   cursor: pointer;
+}
+
+.opacity-50{
+    opacity: .5;
+}
+
+.btn-fixed-120{
+    min-width: 120px!important;
+}
+
+.show-more:hover{
+text-decoration: none;
+}
+
+.icons-wrapper > .fas {
+    padding-right:1rem;
+}
+
+.icons-wrapper > .fas:hover{
+    color: var(--color-accent-blue);
+    cursor: pointer;
 }
