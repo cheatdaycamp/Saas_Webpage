@@ -34,10 +34,10 @@
 
   <body>
     <div class="container-fluid d-flex flex-grow-1 flex-column p-0 h-100">
-      <div id="main-row" class="row h-100 d-flex flex-grow-1 ">
+      <div id="main-row" class="row h-100 d-flex flex-grow-1">
         <div
           id="dashboard"
-          class="p-0 d-none d-md-flex d-lg-flex flex-column flex-grow-1 col-xl-2 col-lg-3 col-md-4 "
+          class="p-0 d-none d-md-flex d-lg-flex flex-column flex-grow-1 col-xl-2 col-lg-3 col-md-4"
         >
           <div class="row my-3">
             <h6 class="dashboard-title accent-blue">SaaS Kit</h6>
@@ -80,22 +80,20 @@
             style="background-color: var(--color-divider);"
           ></div>
 
-          <div class=" row">
+          <div class="row">
             <div class="col-12">Settings</div>
             <div class="col-12">Toggle Sidebar</div>
           </div>
         </div>
 
         <!-- MAIN -->
-        <div id="fucking-main"
-        
-        class="flex-column flex-grow-1 col p-0 d-flex "
-
-        >
+        <div id="fucking-main" class="flex-column flex-grow-1 col p-0 d-flex">
           <!-- GLOBAL SEARCH-->
 
           <div class="row search-bar">
-            <nav class="col d-flex justify-content-between align-items-center">
+            <nav
+              class="col d-flex justify-content-between align-items-center p-3 px-5"
+            >
               <a href="" class=""> <i class="fas fa-search"></i></a>
               <input
                 type="text"
@@ -114,18 +112,25 @@
 
           <!-- CONTENT WRAPPER -->
 
-          <div
-            id="content-wrapper"
-            class="row flex-grow-1 d-flex m-4 bkg-gray"
-          >
-            <div class="col-lg-6 col-12 ">
+          <div id="content-wrapper" class="row flex-grow-1 d-flex m-4 bkg-gray">
+            <div class="col-lg-6 col-12">
               <!-- TASKS INFO-->
               <div class="row" id="tasks-text">
-                <div class="col d-flex justify-content-between">
-                  <h6 class="bold d-inline-flex">8 task completed out of 10</h6>
-                  <h6 class="d-inline-flex color-dropdowns">
-                    Show: <span class="color-selected">This Week</span>
+                <div class="col d-flex justify-content-between my-3">
+                  <h6 class="bold d-inline-flex align-items-center">
+                    8 task completed out of 10
                   </h6>
+                  <div class="form-group d-inline-flex align-items-center">
+                    <label for="tasks-form">Show: </label>
+                    <select
+                      class="form-control border-0 color-selected p-0"
+                      id="tasks-form"
+                    >
+                      <option selected>This week</option>
+                      <option>This Month</option>
+                      <option>This Year</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               <!-- TASKS INFO-->
@@ -133,7 +138,7 @@
               <!-- PROGRESS BAR-->
               <div class="row">
                 <div class="col">
-                  <div class="progress" style="height: 4px;">
+                  <div class="progress" style="height: 5px;">
                     <div
                       class="progress-bar"
                       role="progressbar"
@@ -152,9 +157,40 @@
 
               <!-- DATE-->
               <div class="row">
-                <h5 class="col-12 bold">23 December, Sunday</h5>
+                <h5 class="col-12 bold my-4">23 December, Sunday</h5>
               </div>
               <!-- DATE-->
+
+              <!-- WEEK DAYS -->
+              <div class="row d-none d-md-flex my-4">
+                <div class="col color-dropdowns">
+                  <div class="row justify-content-between">
+                    <div class="days ">
+                      Sun
+                      <span class="date  mt-2 date-selected color-profile-gray ">23</span>
+                    </div>
+                    <div class="color-selected days ">
+                      Mon <span class="date mt-2 ">24</span>
+                    </div>
+                    <div class="days ">
+                      Tue <span class="date  mt-2 color-profile-gray">25</span>
+                    </div>
+                    <div class="days ">
+                      Wed <span class="date mt-2  color-profile-gray">26</span>
+                    </div>
+                    <div class="days ">
+                      Thu <span class="date mt-2 color-profile-gray">27</span>
+                    </div>
+                    <div class="days ">
+                      Fri <span class="date  mt-2 color-profile-gray">28</span>
+                    </div>
+                    <div class="days ">
+                      Sat <span class="date  mt-2 color-profile-gray">29</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- WEEK DAYS -->
 
               <!-- SEPARATOR-->
               <div class="row">
@@ -164,22 +200,6 @@
                 ></div>
               </div>
               <!-- SEPARATOR-->
-
-              <!-- WEEK DAYS -->
-              <div
-                class="row justify-content-around align-items-center d-none d-md-flex"
-              >
-                <div class="days data">
-                  Sun <span class="date date-selected">23</span>
-                </div>
-                <div class="days data">Sun <span class="date">24</span></div>
-                <div class="days data">Sun <span class="date">25</span></div>
-                <div class="days data">Sun <span class="date">26</span></div>
-                <div class="days data">Sun <span class="date">27</span></div>
-                <div class="days data">Sun <span class="date">28</span></div>
-                <div class="days data">Sun <span class="date">29</span></div>
-              </div>
-              <!-- WEEK DAYS -->
 
               <!-- CARD REMINDERS -->
               <div class="row">
@@ -290,7 +310,7 @@
 
               <!-- SHOW MORE -->
               <div class="col-12 text-center mb-3">
-                <span class="">Show More</span>
+                <a><span class="">Show More</span></a>
               </div>
               <!-- SHOW MORE -->
             </div>
@@ -300,7 +320,7 @@
 
               <div id="deals" class="row flex-grow-1 mb-3">
                 <div
-                  class="col-12 p-0  justify-content-between d-flex flex-column"
+                  class="col-12 p-0 justify-content-between d-flex flex-column"
                 >
                   <div
                     class="row d-flex justify-content-between my-3 align-items-center"
@@ -316,7 +336,7 @@
                     style="background-color: var(--color-divider);"
                   ></div>
 
-                  <div class="row  flex-grow-1 py-3">
+                  <div class="row flex-grow-1 py-3">
                     <div class="col-12 cucu h-100 align-items-center">
                       <div
                         class="d-flex justify-content-start align-items-center mb-3"
@@ -336,7 +356,7 @@
 
               <div id="tasks" class="row flex-grow-1">
                 <div
-                  class="col-12 p-0  justify-content-between d-flex flex-column"
+                  class="col-12 p-0 justify-content-between d-flex flex-column"
                 >
                   <div class="row d-flex justify-content-between my-3">
                     <h5 class="bold">Tasks</h5>
@@ -350,11 +370,13 @@
                     style="background-color: var(--color-divider);"
                   ></div>
 
-                  <div class="row flex-grow-1  d-flex">
-                    <div class="col-8  d-flex justify-content-center align-items-center p-2">
-                      <div class="row d-flex cucu flex-grow-1 h-100 img-circular-graph">
-                      </div>
-                      
+                  <div class="row flex-grow-1 d-flex">
+                    <div
+                      class="col-8 d-flex justify-content-center align-items-center p-2"
+                    >
+                      <div
+                        class="row d-flex cucu flex-grow-1 h-100 img-circular-graph"
+                      ></div>
                     </div>
                     <div class="col-4">
                       <div
@@ -362,15 +384,21 @@
                       >
                         <div class="d-flex flex-column">
                           <div class="d-flex align-items-center mb-2">
-                            <div class="marker-ring marker-green d-inline-block"></div>
+                            <div
+                              class="marker-ring marker-green d-inline-block"
+                            ></div>
                             <p class="graph-text ml-1">Active</p>
                           </div>
                           <div class="d-flex align-items-center mb-2">
-                            <div class="marker-ring marker-yellow d-inline-block"></div>
+                            <div
+                              class="marker-ring marker-yellow d-inline-block"
+                            ></div>
                             <p class="graph-text ml-1">Ended</p>
                           </div>
                           <div class="d-flex align-items-center mb-2">
-                            <div class="marker-ring marker-red d-inline-block"></div>
+                            <div
+                              class="marker-ring marker-red d-inline-block"
+                            ></div>
                             <p class="graph-text ml-1">Completed</p>
                           </div>
                         </div>
@@ -379,10 +407,6 @@
                   </div>
                 </div>
               </div>
-
-
-
-              
 
               <!-- CIRCLE GRAPH -->
             </div>
