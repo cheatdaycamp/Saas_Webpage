@@ -475,7 +475,7 @@
               <!-- CARD REMINDERS -->
 
               <!-- SHOW MORE -->
-              <div class="col-12 text-center mb-3">
+              <div class="col-12 text-center mb-3 d-none d-md-flex d-lg-flex d-xl-flex justify-content-center">
                 <a href="" class="show-more"><span class="">Show More</span></a>
               </div>
               <!-- SHOW MORE -->
@@ -494,16 +494,18 @@
                   <div
                     class="row d-flex justify-content-between my-3 align-items-center"
                   >
-                    <h5 class="bold">Deals</h5>
+                  <div class="d-flex flex-grow-1">
+                    <h5 class="bold d-none d-md-block d-lg-block d-xl-block">Deals</h5>
+                  </div>
                     <div class="form-group d-inline-flex align-items-center">
                       <label for="deals-form">Show: </label>
                       <select
                         class="form-control border-0 color-selected p-0"
                         id="deals-form"
                       >
-                        <option>This week</option>
-                        <option selected>This Month</option>
-                        <option>This Year</option>
+                        <option>Weekly</option>
+                        <option selected>Monthly</option>
+                        <option>Yearly</option>
                       </select>
                     </div>
                   </div>
@@ -518,7 +520,7 @@
                       <div
                         class="d-flex justify-content-start align-items-center mb-3"
                       >
-                        <div class="marker-ring d-inline-block"></div>
+                        <div class="marker-ring marker-blue d-inline-block"></div>
                         <p class="graph-text ml-1">Closed deals</p>
                       </div>
                       <div class="border-2">
@@ -544,7 +546,9 @@
                   <div
                     class="row d-flex justify-content-between align-items-center my-3"
                   >
-                    <h5 class="bold">Tasks</h5>
+                  <div class="d-flex flex-grow-1">
+                    <h5 class="bold d-none d-md-block d-lg-block d-xl-block">Tasks</h5>
+                  </div>
                     <div class="form-group d-inline-flex align-items-center">
                       <label for="circle-form">Show: </label>
                       <select
